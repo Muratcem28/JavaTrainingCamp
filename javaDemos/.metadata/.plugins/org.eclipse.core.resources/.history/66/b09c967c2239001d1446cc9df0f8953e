@@ -1,0 +1,31 @@
+package switchDemo;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		char grade = 'B';
+
+		switch(grade){
+		
+		case 'A':		// ; değil : Dikkat!!
+			System.out.println("Mükemmel : Geçtiniz");
+		break;
+
+		case 'B':
+		case 'C':		// B ve C'nın aynı sonucun dönmesi için böyle yazabiliriz
+			System.out.println("İyi : Geçtiniz");
+		break;
+
+		case 'D':
+			System.out.println("Fena Değil : Geçtiniz");
+		break;
+		
+		case 'F':
+			System.out.println("Maalesef Kaldınız");
+		break;
+	}
+
+	}
+
+}

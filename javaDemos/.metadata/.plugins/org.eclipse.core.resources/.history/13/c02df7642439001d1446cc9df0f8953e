@@ -1,0 +1,40 @@
+package arraysDemo;
+
+public class main {
+
+	public static void main(String[] args) {
+	
+		String student1 = "Canım";
+		String student2 = "Balım";
+		String student3 = "Tatlım";
+		String student4 = "Ömrüm";
+
+		System.out.println(student1);
+		System.out.println(student2);
+		System.out.println(student3);
+		System.out.println(student4);
+
+		System.out.println("----------------------------------");
+
+		String[] students = new String[4];	// diziler 0 dan başlar.
+		students[0] = "Canım";
+		students[1] = "Balım";
+		students[2] = "Tatlım";
+		students[3] = "Ömrüm";
+
+		for(int i=0; i<students.length; i++){
+			System.out.println(students[i]);
+		}
+
+		System.out.println("----------------------------------");
+		//Genellikle kullanılan for döngüsü
+
+		for(String student:students){	
+			//student = takma isim başka bişeyde yazabilirdik fakat anlaşılır olması önemli
+			System.out.println(student);
+		}
+
+
+	}
+
+}

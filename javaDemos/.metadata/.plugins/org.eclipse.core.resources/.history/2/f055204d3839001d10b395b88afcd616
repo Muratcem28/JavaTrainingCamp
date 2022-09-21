@@ -1,0 +1,14 @@
+package miniProjectPrimeNumber;
+
+public class main {
+
+	public static void main(String[] args) {
+		int number = 25;
+		int remainder = number%2 ; 		// remainder = kalan
+
+		System.out.println(remainder);
+
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package miniProjectPrimeNumber;
+
+public class main {
+
+	public static void main(String[] args) {
+		int number = 3;
+	//	int remainder = number%2 ; 		// remainder = kalan
+		boolean isPrime = true;
+		
+		if(number == 1) {
+			System.out.println("Number is not prime");
+			return;	// bu komut sayesinde bu bloktan sonra fonksiyonu biter.
+		}
+		if(number<1) {
+			System.out.println("Invalid number");	// geçersiz sayi
+			return;
+		}
+		
+		for(int i=2; i<number; i++) {
+			if(number%i == 0) {
+			isPrime = false;
+			}
+		}
+		if(isPrime) {
+			System.out.println(number + " is prime number");
+		}else {
+			System.out.println("Number is not prime");
+		}
+
+	}
+
+}
