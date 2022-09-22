@@ -5,4 +5,7 @@
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 		</list>
 	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item key="OUTSIDE_LOCATION" value="C:\javaDemos\Day1"/>
+	</section>
 </section>
