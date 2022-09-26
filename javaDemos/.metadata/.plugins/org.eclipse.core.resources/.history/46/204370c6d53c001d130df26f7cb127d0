@@ -1,0 +1,9 @@
+package constructor;
+
+public class Product {
+
+	public Product() {
+		//Yapıcı method
+		System.out.println("Yapıcı blok çalıştı");
+	}
+}

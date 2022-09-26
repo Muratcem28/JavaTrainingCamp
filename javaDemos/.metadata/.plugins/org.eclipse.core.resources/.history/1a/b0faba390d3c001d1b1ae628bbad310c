@@ -1,0 +1,11 @@
+package classesWithAttrtibutes;
+
+public class Product {
+	// Bu özelliklere attribute veya field deniyor.
+	
+	int id;
+	String name;
+	String description;
+	double price;
+	int stockAmount;
+}

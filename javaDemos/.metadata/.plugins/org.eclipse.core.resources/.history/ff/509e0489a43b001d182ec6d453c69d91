@@ -1,0 +1,12 @@
+package classesWithAttrtibutes;
+
+public class ProductManager {
+	 
+	public void Add(Product product) {
+		//JDBC ile veritabanına göndericez sonra ki derslerde
+		
+		System.out.println("Ürün Eklendi " + product.name);
+		
+	}
+
+}

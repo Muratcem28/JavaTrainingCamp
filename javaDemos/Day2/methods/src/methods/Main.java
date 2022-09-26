@@ -1,0 +1,44 @@
+package methods;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		/// DRY --> Don't repeat yourself = Kendini tekrar etme.
+		// method'lar camel casing yazılır --> mülakatlarda sorulabilir
+		findTheNumber();
+		findTheNumber();
+		findTheNumber();
+		findTheNumber();
+
+	}
+
+	public static void findTheNumber() {
+
+		int[] numbers = new int[] { 1, 2, 5, 7, 9, 0 };
+		int sought = 6; // sought = aranan
+		boolean isContain = false; // isContain = var mı
+
+		for (int number : numbers) {
+			if (number == sought) {
+				isContain = true;
+				break;
+			}
+		}
+
+		String message = "";
+
+		String positiveMessage = "There is the number: " + sought;
+		String negativeMessage = "There is not the number: " + sought;
+		if (isContain) {
+			// System.out.println("There is the number");
+			sendMessage(positiveMessage);
+		} else {
+			sendMessage(negativeMessage);
+		}
+	}
+
+	public static void sendMessage(String message) {
+		System.out.println(message);
+	}
+}

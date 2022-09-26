@@ -1,0 +1,53 @@
+package methods;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		findTheNumber();
+		findTheNumber();
+		findTheNumber();
+		findTheNumber();
+		
+	}
+	
+	
+	public static void findTheNumber() {
+		
+		int[] numbers = new int[] {1,2,5,7,9,0};
+		int sought = 6; 	// sought = aranan
+		boolean isThere = false;	// is there = var mı 
+		
+		for (int number : numbers) {
+			if(number == sought) {
+				isThere = true;
+				break;
+			}
+		}
+		
+		String message = "";
+		message = "There is the number: " + sought;
+		if(isThere) {
+		//	System.out.println("There is the number");
+			
+			sendMessage(message);
+		}else {
+			sendMessage("There is not the number: " + sought);
+			
+		}
+	}
+	
+	public static void sendMessage(String message) {
+		System.out.println(message);
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

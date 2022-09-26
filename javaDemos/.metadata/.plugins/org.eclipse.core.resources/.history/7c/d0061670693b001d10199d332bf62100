@@ -1,0 +1,27 @@
+package classes;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//Class'lar büyük harfle başlar.
+		//Class'lar "referance type"dir.
+		CustomerManager customerManager = new CustomerManager();
+		CustomerManager customerManager2 = new CustomerManager();
+		customerManager = customerManager2;
+		// Stack ve heap yapısı çok çok çok önemli!!!
+		// heap de referansı tutan kimse kalmazsa garbage collector(GB) -- çöp toplayıcı onu bellekten siler.
+		// Bir nesneyi "new"lemek pahalıdır.
+		customerManager.add();
+		customerManager.remove();
+		customerManager.update();
+		
+		int number1 = 10;
+		int number2 = 20;
+		number2 = number1;
+		number1 = 30;
+		
+		
+	}
+
+}

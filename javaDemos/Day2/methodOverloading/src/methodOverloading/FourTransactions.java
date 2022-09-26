@@ -1,0 +1,15 @@
+package methodOverloading;
+
+public class FourTransactions {
+
+	public int add(int number1, int number2) {
+		return number1 + number2;
+	}
+	
+	public int add(int number1, int number2, int number3) {
+		return number1 + number2;
+		
+		// ide nin kızmamasının nedeni iki methodun parametre imzalarının farklı olması : int int, int int int
+	}
+	// int... numbers denesek array olacağı için mi sağlıklı olmazdı yada olur muydu?
+}
